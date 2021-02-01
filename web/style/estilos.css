@@ -4,186 +4,630 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 03/12/2020, 10:46:08
+    Created on : 21/01/2021, 11:09:02
     Author     : entra21
 */
-    button{
-        background-color: green;
-        height: 50px;
-        font-size: 15px;
-        width: 140px;
-        margin-left: 30px;
-        margin-right: 30px; 
-        margin-top: 10px;
-        color: white;
-    }
-    .error{
-        color: red;
-        font-style: italic;
-        font-size: 30px;
-    }
-    header {
-        margin: 1px;
-        padding: 1px; 
-        text-align: center;
-        font-size: 25px;
-        color: black;
-       
-    }
-
-    footer {
+header {
+        position: absolute;
         width: 100%;
+        height: 72px;
         left: 0px;
-        height: 0px;
-        position: fixed;
-        bottom: 0px;
-        background-color: #777;
-        padding-bottom: 40px;
-        text-align: center;
-        color: white; 
-    }
-    a:link {
-        text-decoration: none;
-        }
-            
-    a:visited {
-        text-decoration: none;
-        }
+        top: 0px;
+        background: #000069;
 
-    a:hover {
-        text-decoration: underline;
-        }
-
-    a:active {
-        text-decoration: underline;
-        }
-        
-    ul.a {
-        list-style-type: circle;
-        }
-        
-    html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}   
-
-
-    body {
-        font-family: Arial;
-        padding: 10px;
-        background: #f1f1f1;
-    }
-
-    /* Estilize a barra de navegação superior */
-    .topnav {
-      overflow: hidden;
-      background-color: activecaption;
-    }
-
-    /* Defina o estilo dos links topnav */
-    .topnav a {
-      float: left;
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 7px 23px;
-      text-decoration: none;
-    }
-
-    /* Mudar a cor ao pairar */
-    .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-
-    /* Crie duas colunas desiguais que flutuam uma ao lado da outra */
-    /* Coluna esquerda */
-    .leftcolumn {   
-      float: left;
-      width: 19%;
-    }
-
-    /* Coluna direita */
-    .rightcolumn {
-      float: right;
-      width: 81%;
-      background-color: #f1f1f1;
-      padding-left: 1px;
-    }
-
-    /* Imagem falsa */
-    .fakeimg {
-      background-color: #aaa;
-      width: 100%;
-      padding: 20px;
-    }
-
-    /* Adicione um efeito de cartão para artigos */
-    .card {
-      background-color: white;
-      padding: 30px;
-      margin-top: 5px;
-      margin-left: 10px;
-    }
-
-    /* Limpe os flutuadores após as colunas */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    /* Layout responsivo - quando a tela tem menos de 800 px de largura, empilhe as duas colunas uma em cima da outra, em vez de uma ao lado da outra */
-    @media screen and (max-width: 800px) {
-      .leftcolumn, .rightcolumn {   
-        width: 100%;
-        padding: 0;
-      }
-    }
-
-    /* */
-    @media screen and (max-width: 400px) {
-      .topnav a {
-        float: none;
-        width: 100%;
-      }
-    }
-    ul.a {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    ul.b {
-        list-style-type: square;
-    }
-    .column {
-        float: left;
-        padding: 1px;
-    }
-
-    .clearfix::after {
-       content: "";
-       clear: both;
-       display: table;
 }
 
-    .menu {
-       width: 105%;
+
+.circle1{
+        position: absolute;
+        border-radius: 50%;
+        border-color: black;
+        width: 60px;
+        height: 60px;
+        left: 1430px;
+        top: 8px;
+        background: lightgray;
+        text-decoration: none;
+        font-size: 11px;
+        
+}
+
+.circle2{
+        position: absolute;
+        border-radius: 50%;
+        border-color: black;
+        width: 60px;
+        height: 60px;
+        left: 1360px;
+        top: 8px;
+        background: lightgray;
+        text-decoration: none;
+        font-size: 7px;
+        
+}
+a{
+    color: black;
+    text-decoration: none;
+    
+}
+
+.logo{
+    position: absolute;
+    width: 1026px;
+    height: 70px;
+    left: 204px;
+    top: 2px;
+    
+}
+
+.icomenu{
+    position: absolute;
+    left: 3%;
+    right: 85.03%;
+    top: 10px;
+    bottom: 21.67%
+        
+}
+
+.corpo{
+    position: absolute;
+    width: 100%;
+    height: 757px;
+    left: 0px;
+    top: 71px;
+    background-image: linear-gradient(to left, rgba(0,0,255,1), rgba(0,0,255,0));
+     
+}
+
+.txt1{
+    position: absolute;
+    width: 510px;
+    height: 455px;
+    left: 72px;
+    top: 107px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    color: black;
+    
+}
+.controle{
+    position: absolute;
+    width: 84%;
+    height: 757px;
+    left: 240px;
+    top: 0px;
+    background: url(controle.png);
+}
+
+.msg{
+    position: absolute;
+    width: 100%;
+    height: 660px;
+    left: 0px;
+    top: 828px;
+    background-image: linear-gradient(to left, rgba(0,0,255,1), rgba(0,0,255,0));
+     
+}
+.txt2{
+    position: absolute;
+    width: 30%;
+    height: 290px;
+    left: 520px;
+    top: 137px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: black;
+    
+}
+
+.ret1{
+    position: absolute;
+    width: 31%;
+    height: 540px;
+    left: 0px;
+    top: 55px;
+    color: black;
+   
+}
+
+.ret2{
+    position: absolute;
+    width: 31%;
+    height: 540px;
+    left: 1032px;
+    top: 55px;
+    
+}
+
+.sub1{
+    position: absolute;
+    width: 100%;
+    height: 381px;
+    left: 2px;
+    top: 1480px;
+    
+    
+}
+
+.sub2{
+    position: absolute;
+    width: 100%;
+    height: 842px;
+    left: 0px;
+    top: 1980px;
+    background-image: linear-gradient(to left, rgba(0,0,255,1), rgba(0,0,255,0));
+     
+}
+
+.ret3{
+    position: absolute;
+    width: 442px;
+    height: 626px;
+    left: 885px;
+    top: 100px;
+    
+}
+
+.ret4{
+    position: absolute;
+    width: 288px;
+    height: 91px;
+    left: 224px;
+    top: 666px;
+    background: lightskyblue;
+    
+}
+
+.txt3{
+    position: absolute;
+    width: 190px;
+    height: 25px;
+    left: 280px;
+    top: 676px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: black;
+    
+}
+
+.txt4{
+    position: absolute;
+    width: 585px;
+    height: 147px;
+    left: 126px;
+    top: 65px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: black;
+    
+}
+
+.txt5{
+    position: absolute;
+    width: 543px;
+    height: 91px;
+    left: 223px;
+    top: 217px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: black;
+    
+}
+
+/* Layout responsivo - quando a tela tem menos de 800 px de largura, empilhe as duas colunas uma em cima da outra, em vez de uma ao lado da outra */
+@media screen and (max-width: 800px) {
+.leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
     }
+}
 
-
-    .menu ul {
-       list-style-type: none;
-       margin: 0;
-       padding: 0;
+    /* */
+@media screen and (max-width: 400px) {
+.topnav a {
+    float: none;
+    width: 100%;
     }
+}
 
-    .menu li {
-      padding: 5px;
-      margin-bottom: 1px;
-      background-color: #33b5e5;
-      color: #ffffff;
-    }
-
-    .menu li:hover {
-      background-color: #0099cc;
+/* Adicione um efeito de cartão para artigos */
+.login {
+    position: absolute;
+    background-color: white;
+    padding: 8px;
+    margin-top: 5px;
+    margin-left: 3px;
+    width: 205px;
+    top: 67px;
+      
     }
     
+/* Defina o estilo dos links topnav */
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 7px 22px;
+    text-decoration: none;
+    }
+    
+/* Estilize a barra de navegação superior */
+.topnav {
+    overflow: hidden;
+    background-color: activecaption;
+    }
+    
+/* Mudar a cor ao pairar */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+    
+.painel{
+    position: absolute;
+    width: 543px;
+    height: 91px;
+    left:9px;
+    top: 254px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: black;   
+    }
+    
+.menu{
+    position: absolute;
+    padding: 5px;
+    margin-top: 1px;
+    margin-left: 3px;
+    width: 255px;
+    top: 325px;
+      
+    }
+      
+.menu li {
+      padding: 12px;
+      margin-bottom: 1px;
+      background-color: #33b5e5;
+      color: black;
+    }
+    
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    }
+    
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+.column {
+    float: left;
+    padding: 1px;
+    }
+
+ul.a {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+
+ul.b {
+    list-style-type: square;
+     
+    }
+    
+.gasto{
+    position: absolute;
+    background-color: gold;
+    padding: 25px;
+    margin-top: 5px;
+    margin-left: 3px;
+    width: 300px;
+    top: 120px;
+    left: 300px;
+         
+    }
+    
+.renda{
+    position: absolute;
+    background-color: coral;
+    padding: 25px;
+    margin-top: 5px;
+    margin-left: 3px;
+    width: 300px;
+    top: 120px;
+    left: 700px;
+         
+    }
+    
+.categoria{
+    position: absolute;
+    background-color: goldenrod;
+    padding: 25px;
+    margin-top: 5px;
+    margin-left: 3px;
+    width: 300px;
+    top: 120px;
+    left: 1100px;
+         
+    }
+    
+.usuario{
+    position: absolute;
+    background-color: orange;
+    padding: 25px;
+    margin-top: 5px;
+    margin-left: 3px;
+    width: 300px;
+    top: 397px;
+    left: 505px;
+         
+    }
+    
+.resumo{
+    position: absolute;
+    background-color: sandybrown;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 3px;
+    width: 300px;
+    top: 397px;
+    left: 905px;
+    height: 200px;    
+    }
+    
+.final{
+    position: absolute;
+    background:  lightgray;
+    width: 100%;
+    height: 27px;
+    bottom: 0px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    color: black;
+    
+}
+
+.cadcat{
+    position: absolute;
+    background-color: aqua;
+    padding: 60px;
+    margin-top: 5px;
+    margin-left: 3px;
+    width: 800px;
+    top: 80px;
+    left: 430px;
+    height: 570px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 18px;    
+    }
+    
+.button {
+  background-color: gainsboro;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.container {
+  position: absolute;
+  width: 60%;
+  left: 20%;
+  top: 11%;
+  height: 80%;
+  border-radius: 5px;
+  background-color: bisque;
+  padding: 20px;
+  
+}
+
+.col-25 {
+  float: left;
+  width: 55%;
+  margin-top: 5px;
+  font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], [type=date], [type=password],select, textarea {
+  position: absolute;
+  width: 60%;
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  left: 30%;
+}
+
+input:focus {
+  background-color: lightblue;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+
+
+.col-75 {
+  float: right;
+  width: 45%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+ 
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.salvar {
+  position: absolute;
+  background-color: gainsboro;
+  color: black;
+  padding: 10px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 18px;
+  margin: 4px 4px;
+  cursor: pointer;
+  border: 2px solid black;
+  left: 65%;
+
+}
+
+.cancelar {
+  position: absolute;
+  background-color: gainsboro;
+  color: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 18px;
+  margin: 4px 4px;
+  cursor: pointer;
+  border: 2px solid black;
+  left: 78%;
+  width: 12%;
+
+}
+
+table {
+    position: absolute;
+    font-family: arial, sans-serif;
+    font-size: 17px;
+    color: black;
+    border-collapse: collapse;
+    width: 93%;
+    top: 90px;
+    left: 33px;
+    
+    }
+td, th {
+    border: 2px solid black;
+    text-align: center;
+    padding: 5px;
+    }
+tr:nth-child(even) {
+    background-color: #B0E0E6;
+    }
+    
+.container1 {
+  position: absolute;
+  width: 83%;
+  left: 15%;
+  top: 11%;
+  height: 80%;
+  border-radius: 5px;
+  background-color: bisque;
+  padding: 17px;
+  
+}
+
+.cadcat1{
+    position: absolute;
+    background-color: lightpink;
+    padding: 60px;
+    margin-top: 5px;
+    margin-left: 3px;
+    width: 800px;
+    top: 80px;
+    left: 430px;
+    height: 570px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 18px;    
+    }
+    
+.cadcat2{
+    position: absolute;
+    background-color: greenyellow;
+    padding: 60px;
+    margin-top: 5px;
+    margin-left: 3px;
+    width: 800px;
+    top: 80px;
+    left: 430px;
+    height: 570px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 18px;    
+    }
+    
+.letra{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    }

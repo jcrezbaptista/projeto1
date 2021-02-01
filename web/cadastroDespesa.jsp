@@ -6,46 +6,88 @@
 
 <%@page import="java.util.List"%>
 <%@page import="Modelos.Categoria"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html style="background-color:rgba(0, 0, 242, 0.1)">
+     <head>
         <title>Minha Agenda Financeira</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/estilos.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="style/estilos.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
     </head>
     <body>
-        <h1>Cadastro de Despesa</h1>
+        <header>
+            <div class="logo"><img src="imagens/logo.png"></div>
+        </header>
+        
+        <div class="login">
+        <img src="imagens/avatar.jpg" style="width:76px">
+        <h2>Olá João !!!</h2>
+        <div class="topnav a">
+            <a href="#"><i class="fa fa-envelope"></i> </a>
+            <a href="#"><i class="fa fa-user"></i></a>
+            <a href="#"><i class="fa fa-cog"></i></a>
+        </div>
+        </div>
+        
+        <div class="painel"> Painel de Controle </div><br>
+        
+        <div class="menu"
+        <div class="clearfix">
+        <div class="column">
+        <ul>
+            <li><a href="menu.jsp" ><i class="fa fa-users fa-fw"></i> MENU </a></li>
+            <li><a href="cadastroDespesa.jsp"><i class="fas fa-comments-dollar"></i>  Seu novo Gasto</a> </li>
+            <li><a href="cadastroReceita.jsp"><i class="fas fa-donate"></i>  Sua nova Renda</a></li>
+            <li><a href="cadastroCategoria.jsp"><i class="fas fa-clipboard"></i>  Crie nova Categoria</a></li>
+            <li><a href="consultaBalancete.jsp"><i class="fas fa-balance-scale"></i>  Resumo Financeiro</a></li>
+            <li><a href="#"><i class="fa fa-bell fa-fw"></i>  Meus Dados</a></li>
+            <li><a href="#"><i class="fa fa-cog fa-fw"></i>  Configurações</a></li>
+        </ul>
+        </div>
+        </div>
+        
+        <div class="cadcat"><h2> Cadastro de Gasto </h2>
         <%
             Categoria categoria = new Categoria();
             List<Categoria> categorias = categoria.consultar("D");
             
         %>
         
-        <div>
+        <br>
             <form action="recebeDadosDespesa.jsp" method="POST">
             <label>Informe a categoria</label>
-            <select name="iddespesa"><% for(Categoria c: categorias){ %>
+            <select style="width: 30%; padding: 8px" name="iddespesa"><% for(Categoria c: categorias){ %>
                     <option value="<%out.write(c.getId());%>"> <%out.write(c.getDescricao());%> </option>
                     <%}%>
             </select> 
-            
-            <br />
+            <br>
+            <br>
             <label>Informe a descrição</label>
-            <input type="text" name="descricao" /> 
-            
-            <br />
+            <input  type="text" name="descricao" /> 
+            <br>
+            <br>
             <label>Informe o valor</label>
-            <input type="text" name="valor" />
-            
-            <br />
+            <input style="width: 30%; padding: 4px" type="text" name="valor" />
+            <br> 
+            <br>
             <label>Informe a data</label>
-            <input type="date" name="data" />
-            
-            <hr />
-            <input type="button" value="Salvar" onclick="enviaForm()" />
-            <input type="reset" value="Cancelar" onclick="enviaForm()" />
+            <input style="width: 30%; padding: 5px" type="date" name="data" />
+            <br>
+            <br>
+            <input class="salvar" type="button" value="Salvar" onclick="enviaForm()" />
+            <input class="cancelar" type="reset" value="Cancelar" />
+           
             </div>
+            
         </form>
+            
         <script>
             function enviaForm(){
                 var descricao = document.getElementsByName("descricao");
@@ -70,5 +112,11 @@
             document.forms[0].submit();
         }
         </script>
+        </div>
+        
+        <footer>
+             <i class="final"><img src="imagens/icon-c.png" > - 2021 - Desenvolvido nas aulas de Java da Turma Maturitech </i>
+        </footer>
+        
     </body>
 </html>

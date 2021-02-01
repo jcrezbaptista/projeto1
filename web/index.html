@@ -9,118 +9,43 @@ and open the template in the editor.
         <title>Minha Agenda Financeira</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
         <link rel="stylesheet" href="style/estilos.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-           
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </head>
-        <body>
+    <body>
+        <header>
+            <button class="icomenu"><a href="#" class="fas fa-bars" style="font-size: 30px"></a></button>
+            <i class="logo"><img src="imagens/logo.png"></i>
+            <button class="circle1"><a href="#"> ENTRAR </a></button>
+            <button class="circle2"><a href="#"> CADASTRAR </a></button>
             
+        </header>
         
-        <div class="row">
-        <div class="leftcolumn">
-        <div class="card">
-        <img src="imagens/avatar.jpg" class="w3-circle w3-margin-right" style="width:46px">
-        <h2>Olá João !!!</h2>
-        <div class="topnav a">
-            <a href="#"><i class="fa fa-envelope"></i> </a>
-            <a href="#"><i class="fa fa-user"></i></a>
-            <a href="#"><i class="fa fa-cog"></i></a>
-        </div>
+        <div class="corpo">
+            <p class="txt1"> O grande desafio dos brasileiros é a organização de suas vidas financeiras,
+             por isto é muito importante o controle de suas finanças.</p>
+            <img class="controle" src="imagens/controle.png">
         </div>
         
-        <div class="leftcolumn">
-        </div>
-        <div class="card">
-            
-        <h4><b>Painel de Controle</b></h4></br>
-        <div class="clearfix">
-        <div class="column menu">
-        <ul class="a">
-            <li><a href="#" ><i class="fa fa-users fa-fw"></i>  Visão Geral</a></li>
-            <li><a href="cadastroDespesa.jsp"><i class="fas fa-comments-dollar"></i>  Seu novo Gasto</a> </li>
-            <li><a href="cadastroReceita.jsp"><i class="fas fa-donate"></i>  Sua nova Renda</a></li>
-            <li><a href="cadastroCategoria.jsp"><i class="fas fa-clipboard"></i>  Crie nova Categoria</a></li>
-            <li><a href="consultaBalancete.jsp"><i class="fas fa-balance-scale"></i>  Resumo Financeiro</a></li>
-            <li><a href="#"><i class="fa fa-bell fa-fw"></i>  Noticias</a></li>
-            <li><a href="#"><i class="fa fa-bank fa-fw"></i>  Geral</a></li>
-            <li><a href="#"><i class="fa fa-history fa-fw"></i>  Historico</a></li>
-            <li><a href="#"><i class="fa fa-cog fa-fw"></i>  Configurações</a></li>
-        </ul>
-        </div>
-        </div>
-        </div>
-    </div>
                 
-    <div class="rightcolumn">
-    <div class="card">
-        <h2><b><i class="fas fa-hand-holding-usd"></i> Minha Agenda Financeira</b></h2>
-       
-    </div>
-    <div class="card">
-        <div class="w3-row-padding w3-margin-bottom">
-        <div class="w3-quarter">
-        <div class="w3-container w3-red w3-padding-16">
-        <div class="w3-left"><i class='fas fa-comments-dollar' style='font-size:48px'></i></div>
-        <div class="w3-right"> 
+        <div class="msg">
+            <img class="ret1" src="imagens/ret1.jpg">       
+        <div class="txt2"><p> Com esta mudança de hábito, você irá controlar seus ganhos e gastos,
+                tendo uma vida mais feliz e equilibrada...</p>
+        </div>     
+        <img class="ret2" src="imagens/ret2.jpg">
         </div>
-        <div class="w3-clear"></div>
-    <h4>Gastos</h4>
-    <ul class="b">
-        <li><a href="cadastroDespesa.jsp" target="_blank">Lançar novo Gasto</a> </li>
-        <li><a href="consultaDespesa.jsp">Consultas</a></li>
-    </ul>   
-        </div>
-        </div>
-    <div class="w3-quarter">
-        <div class="w3-container w3-blue w3-padding-16">
-        <div class="w3-left"><i class='fas fa-donate' style='font-size:48px'></i></div>
-        <div class="w3-right">
-        </div>
-        <div class="w3-clear"></div>
-    <h4>Rendas</h4>
-        <ul class="b">
-            <li><a href="cadastroReceita.jsp">Lançar nova Renda</a> </li>
-            <li><a href="consultaReceita.jsp">Consultas</a></li>
-        </ul>
-        </div>
-        </div>
-        <div class="w3-quarter">
-        <div class="w3-container w3-teal w3-padding-16">
-        <div class="w3-left"><i class='fas fa-clipboard' style='font-size:48px'></i></div>
-        <div class="w3-right">
-        </div>
-        <div class="w3-clear"></div>
-    <h4>Categorias</h4>
-        <ul class="b">
-            <li><a href="cadastroCategoria.jsp">Cadastro</a></li>     
-            <li><a href="consultaCategoria.jsp">Consulta</a></li>
-        </ul>
-        </div>
-        </div>
-        <div class="w3-quarter">
-        <div class="w3-container w3-orange w3-text-white w3-padding-16">
-        <div class="w3-left"><i class='fas fa-balance-scale' style='font-size:48px'></i></div>
-        <div class="w3-right">
-        </div>
-        <div class="w3-clear"></div>
-    <h4>Resumo Financeiro</h4>
-        <ul class="b">
-            <li><a href="consultaBalancete.jsp">Consulta</a></li>
-        </ul>
-        </div>
-        </div>
-        </div>
+            
+        <div class="sub1">
+            <img src="imagens/sub1.jpg" width="1497" height="500">
         </div>
         
-        </div> 
-    
-           
-    <footer>
-        <script src="scripts/rodape.js"></script> 
-    </footer> 
-        
+        <div class="sub2">
+            <img class="ret3" src="imagens/ret4.jpg">
+            <button class="ret4"><a href="#"></a></button>
+            <p class="txt3"> Cadastra-se Grátis</p>
+            <p class="txt4"> Veja as principais vantagens na utilização de nossos recursos:</p>
+            <div class="txt5"><i class=""   
+        </div>
     </body>
 </html>

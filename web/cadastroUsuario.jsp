@@ -4,107 +4,119 @@
     Author     : User
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html style="background-color:rgba(0, 0, 242, 0.1)">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Minha Agenda Financeira</title>
-            <link rel="stylesheet" href="styles/estilos.css">
-            <style>
-               input[type=checkbox]{
-                display: block;
-                position: relative;
-                margin-left: 230px;                
-            }
-            
-            input[type=button],[type=reset]{
-                display: block;
-                width: 90px;
-                margin-left: auto;
-                margin-right: auto; 
-                margin-top: 10px;
-            }
-            
-            
-            input[type=text]:focus{
-                background-color: white;                                              
-            }
-            
-            input[type=text],[type=date],[type=password]{
-                position: initial;
-                background-color: lightskyblue;
-                border-bottom-color: white;
-                margin-left: 230px; 
-                width: 280px;                                
-            }
-            label{
-                display: block;
-                position: absolute;
-                margin-left: 10px;                 
-            }
-            
-            div{
-                display: block;
-                background-color: lightblue;
-                margin-left: auto;
-                margin-right: auto;
-                width: 530px;
-                border: fuchsia;
-                margin-bottom: 10px;
-                padding: 20px;
-            }
-        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/estilos.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="style/estilos.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
     </head>
     <body>
         <header>
-             <script src="scripts/cabecalho.js"></script>
+            <div class="logo"><img src="imagens/logo.png"></div>
         </header>
-        <section>
-            <nav>
-                 <script src="scripts/menu.js"></script>
-            </nav>
-            <article>
-               
-                  
-                <h1 class="h">"Cadastro Usuario"</h1>
-                <hr />
-                <p id="erros"></p>
-                <form action="recebedadosusuario.jsp" method ="POST">
-                    <div>
-                      <label>INFORME O CPF</label>
-                      <input type="text" name="cpf" /> <br />
-                      <label id="erroCPF" class="error"></label>            
-                      <br />
-
-                      <label>INFORME O NOME</label>
-                      <input type="text" name="nome" /> <br />
-
-                      <br />
-                      <label>INFORME DATA NASCIMENTO</label>
-                      <input type="date" name="datanascimento" /> <br />
-
-                      <br />
-                      <label>INFORME O FONE</label>
-                      <input type="text" name="fone" /> <br />
-
-                      <br />
-                      <label>INFORME O e-mail</label>
-                      <input type="text" name="email" /> <br />
-                      
-                      <br />                      
-                      <label>INFORME SENHA</label><br />
-                      <input type="password" name="senha" /> <br />
-                                      
-                      <hr />
-                      <input type="button" value="Salvar" onclick="enviaDados()"/> <br />
-                      <input type="reset" value="Cancelar" />
-                    </div>
-               </form>
-            </article>
-        </section>
+        
+        <div class="login">
+        <img src="imagens/avatar.jpg" style="width:76px">
+        <h2>Olá João !!!</h2>
+        <div class="topnav a">
+            <a href="#"><i class="fa fa-envelope"></i> </a>
+            <a href="#"><i class="fa fa-user"></i></a>
+            <a href="#"><i class="fa fa-cog"></i></a>
+        </div>
+        </div>
+        
+        <div class="painel"> Painel de Controle </div><br>
+        
+        <div class="menu"
+        <div class="clearfix">
+        <div class="column">
+        <ul>
+            <li><a href="menu.jsp" ><i class="fa fa-users fa-fw"></i>  MENU </a></li>
+            <li><a href="cadastroDespesa.jsp"><i class="fas fa-comments-dollar"></i>  Seu novo Gasto</a> </li>
+            <li><a href="cadastroReceita.jsp"><i class="fas fa-donate"></i>  Sua nova Renda</a></li>
+            <li><a href="cadastroCategoria.jsp"><i class="fas fa-clipboard"></i>  Crie nova Categoria</a></li>
+            <li><a href="consultaBalancete.jsp"><i class="fas fa-balance-scale"></i>  Resumo Financeiro</a></li>
+            <li><a href="#"><i class="fa fa-bell fa-fw"></i>  Meus Dados</a></li>
+            <li><a href="#"><i class="fa fa-cog fa-fw"></i>  Configurações</a></li>
+        </ul>
+        </div>
+        </div>
+        
+            <div class="container"><h2> Cadastro do Usuário </h2>
+            <div class="row">
+            <div class="col-25">
+            <p id="erros"></p>
+            <form action="recebedadosusuario.jsp" method ="POST">
+            <div class="row">
+            <div class="col-25">
+                <label>Informe o CPF</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="cpf" /> 
+                <label id="erroCPF" class="error"></label>    
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-25">
+                <label>Informe o Nome</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="nome" /> 
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-25">
+                <label>Informe Data Nascimento</label>
+            </div>
+            <div class="col-75">
+                <input type="date" name="datanascimento" /> 
+            </div>
+            </div> 
+            <div class="row">
+            <div class="col-25">
+                <label>Informe o Telefone</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="fone" />  
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-25">
+                <label>Informe o e-mail</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="email" />  
+            </div>
+            </div>   
+            <div class="row">
+            <div class="col-25">
+                <label>Informe Senha</label>
+            </div>
+            <div class="col-75">
+                <input type="password" name="senha" />  
+            </div>
+            </div>       
+           
+            <div class="row">
+              <input class="salvar" type="button" value="Salvar" onclick="enviaDados()"/> 
+              <input class="cancelar" type="reset" value="Cancelar" />
+            </div>
+            </div>
+            </form>
+            </div>
+            </div>
+         
         <footer>
-            <script src="scripts/rodape.js"></script>
+            <i class="final"><img src="imagens/icon-c.png" > - 2021 - Desenvolvido nas aulas de Java da Turma Maturitech </i>
         </footer>
        
              <script>
